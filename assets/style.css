@@ -137,8 +137,8 @@ body{
 
 
 .spacement-pages{
+    display: none;
     width: 30px;
-    height: 1px;
 }
 
 .register-page{
@@ -193,9 +193,12 @@ body{
         justify-content: center;
         margin-top: 0px;
       }
+
+      .registro-item{
+        transition:1s;
+      }
       
       .spacement-pages{
-        width:1px;
         height:30px;
       }
 

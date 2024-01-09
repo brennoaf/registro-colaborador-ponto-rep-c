@@ -77,7 +77,8 @@ function handleSubmit(event) {
         <p><strong>Matrícula:</strong> ${value["Matricula 1"]}</p>
         <button class="remove-button" onclick="removeRegistro('${registroDiv.id}')">X</button>
     `; //INSERINDO CONTEÚDO NA DIV DO COLABORADOR
-
+    spacementInput = document.getElementById("input-spacement");
+    spacementInput.style.display = "flex";
     console.log(lista)
 }
  
@@ -103,6 +104,7 @@ function removeRegistro(registroId) {
     const registroContainer = document.querySelector('.register-list');
    if (registroContainer && registroContainer.children.length === 0) { //CHECAR SE A DIV PAI ESTÁ VAZIA, PARA ESCONDER DA PÁGINA TOTALMENTE
       registroPagina.style.width = '0';
+      spacementInput.style.display = "none";
    }
 }
 

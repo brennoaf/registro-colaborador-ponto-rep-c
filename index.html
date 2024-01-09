@@ -10,7 +10,9 @@
 </head>
 <body>
     <div class="title-area">
-        <h1>Registro de<br>Colaborador</h1>
+        <div class="title-text">
+            <h1>Registro de<br>Colaborador</h1>
+        </div>
     </div>
 <div class="main">
 <div class="input-page">
@@ -26,7 +28,7 @@
             <input id="matricula-input" placeholder="Matrícula" name="matricula" type='number'> 
         </div>
         <div class="submit-informations">
-            <button id="submit-button" disabled="true" type="submit" /*onclick="resizeRegistros()"*/>Enviar</button>
+        <button id="submit-button" disabled="true" type="submit">Enviar</button>
         </div>
         <div class="error-messages">
         <p id="error-message"></p>
@@ -39,7 +41,7 @@
     </div>
     <div id="register-history-content" style="display: none;">
     <textarea id="registros" readonly></textarea>
-    </div>
+    </div> <!-- DIV DE REGISTROS COM TUDO QUE FOI CONTIDO (SOMENTE HABILITAR PARA VER E INSERIR ONCLICK='resizeRegistros() EM #submit-button')-->
 </div>    
 <div class="spacement-pages"></div>
 <div class="register-page" id="register-page">

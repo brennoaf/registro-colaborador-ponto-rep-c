@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="title-area">
+        <h1>Registro de<br>Colaborador</h1>
+    </div>
+<div class="main">
+<div class="input-page">
+    <div class="input-contents">
+        <form class="form-register">
+        <div class="input-name-content">
+            <input id="name-input" placeholder="Nome" name="name" type="text" style="margin-top: -30px">
+        </div>
+        <div class="input-pis-content">
+            <input id="pis-input" placeholder="PIS" name="pis" type='number' maxlength="11" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"/>
+        </div>
+        <div class="input-matricula-content">
+            <input id="matricula-input" placeholder="Matrícula" name="matricula" type='number'> 
+        </div>
+        <div class="submit-informations">
+            <button id="submit-button" disabled="true" type="submit" onclick="resizeRegistros()">Enviar</button>
+        </div>
+        <div class="error-messages">
+        <p id="error-message"></p>
+        </div>
+    </form>
+    <div class="spacement-buttons"></div>    
+    </div>
+    <div class="download-content">
+        <button id="download-button" onclick="downloadResultados()" disabled="true">Baixar conteúdo</button>
+    </div>
+    <div id="register-history-content" style="display: none;">
+    <textarea id="registros" readonly></textarea>
+    </div>
+</div>    
+<div class="spacement-pages"></div>
+<div class="register-page" id="register-page">
+    <div class="register-list" id="registerList"></div>
+</div>
+</div>
+    <script src='script.js'></script>
+</body>
+</html>

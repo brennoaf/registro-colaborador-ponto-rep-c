@@ -78,7 +78,6 @@ function handleSubmit(event) {
         <button class="remove-button" onclick="removeRegistro('${registroDiv.id}')">X</button>
     `; //INSERINDO CONTEÚDO NA DIV DO COLABORADOR
 
-    registroDiv.style.width = '320px'; 
     console.log(lista)
 }
  
@@ -87,7 +86,7 @@ function handleSubmit(event) {
 function removeRegistro(registroId) {
    const registroDiv = document.getElementById(registroId);
    getDivName = registroDiv.getAttribute("name"); // PEGA O NOME DA DIV DO COLABORADOR PARA UTILIZAR NO FOR
-   
+
     for(linhas in lista){
        for(linha in linhas){
          if (getDivName == (lista[linhas[linha]].Nome)){ //CHECAR SE O NOME DA DIV DO COLABORADOR (QUE É IGUAL AO NOME DO COLABORADOR NA LISTA) É IGUAL AO NOME NO OBJ ATUAL DA CHECAGEM

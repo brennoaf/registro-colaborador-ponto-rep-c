@@ -57,6 +57,7 @@ body{
 
 .form-register{
     display: grid;
+    justify-items: center;
 }
 
 .input-name-content, .input-pis-content, .input-matricula-content{
@@ -192,10 +193,6 @@ body{
         justify-content: center;
         margin-top: 0px;
       }
-
-      .registro-item{
-        transition:1s;
-      }
       
       .spacement-pages{
         width:1px;
@@ -203,3 +200,4 @@ body{
       }
 
    }
+ 

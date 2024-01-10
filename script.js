@@ -105,6 +105,7 @@ function removeRegistro(registroId) {
    if (registroContainer && registroContainer.children.length === 0) { //CHECAR SE A DIV PAI ESTÁ VAZIA, PARA ESCONDER DA PÁGINA TOTALMENTE
       registroPagina.style.width = '0';
       spacementInput.style.display = "none";
+      downloadButton.disabled = true;
    }
 }
 

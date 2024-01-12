@@ -113,7 +113,7 @@ function removeRegistro(registroId) {
 function downloadResultados(){ // EXECUTAR DOWNLOAD
     console.log(lista);
 
-    var jsonData = JSON.stringify(lista); // TRANSFORMA EM JSON STRING
+    var jsonData = JSON.stringify(lista,null,1); // TRANSFORMA EM JSON STRING
     console.log('CONTEÚDO BAIXADO:\n\n' + jsonData);
 
     var blob = new Blob([jsonData], { type: 'application/json' });

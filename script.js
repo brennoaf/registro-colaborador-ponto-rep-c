@@ -44,6 +44,7 @@ function handleSubmit(event) {
     registNome = nome.value; // REGISTRAR VALOR DO NOME POIS FUTURAMENTE SERÁ NULL
 
     var value = {"Operação":"1+1+I","PIS":pis.value,"Nome":nome.value,"Verificação de Biometria":"1","Qtde Referências":"1","Matricula 1":matricula.value};
+
     lista.push(value);
     const data = new FormData(event.target);
    
@@ -113,7 +114,7 @@ function removeRegistro(registroId) {
 function downloadResultados(){ // EXECUTAR DOWNLOAD
     console.log(lista);
 
-    var jsonData = JSON.stringify(lista,null,1); // TRANSFORMA EM JSON STRING
+    var jsonData = JSON.stringify(lista).replace(/,\s*/g,','); // TRANSFORMA EM JSON STRING
     console.log('CONTEÚDO BAIXADO:\n\n' + jsonData);
 
     var blob = new Blob([jsonData], { type: 'application/json' });

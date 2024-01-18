@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/globalStyle.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/timer-icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar colaborador</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="title-area">
+        <div class="title-text">
+            <h1>Editor de<br>Colaborador</h1>
+        </div>
+    </div>
+<div class="main">
+    <div class="page-content" id="upload-page">
+        <div class="upload-field">
+            <label class="custom-file-upload">
+                <input type="file" id="file-input" name="fileInput" accept=".json">
+            </label>
+            <button type=submit onclick="handleFile()" id='submit-file'>Enviar</button>
+        </div>
+    </div>
+    <div class="download-content">
+        <button class="download-button" id="changes-download" onclick="downloadResultados()">Baixar alterações</button>
+    </div>
+    <div class="spacement-pages" id='input-spacement'></div>
+   <div class="register-page" id="file-content">
+        <div id="employeeInfo"></div>
+   </div>
+</div>
+    <script src="../js/fileManager.js"></script>
+</body>
+</html>

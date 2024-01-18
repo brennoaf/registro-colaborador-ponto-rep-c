@@ -71,13 +71,8 @@ function displayEmployeeInfo(data) {
     employeeInfoContainer.appendChild(employeeDiv);
     
   });
-  const salvarButton = document.createElement('button');
-  salvarButton.textContent = 'Salvar alterações';
-  salvarButton.className = 'save-button';
-  salvarButton.addEventListener('click', function () {
-    salvarInformacoes();
-  });
-  this.uploadPagina.appendChild(salvarButton);
+  const salvarButton = document.getElementById("save-changes-button");
+  salvarButton.style.display = "initial";
 }
 
 function makeEditable(element) {

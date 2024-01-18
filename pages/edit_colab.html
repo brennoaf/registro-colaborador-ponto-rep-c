@@ -15,16 +15,20 @@
         </div>
     </div>
 <div class="main">
-    <div class="page-content" id="upload-page">
-        <div class="upload-field">
-            <label class="custom-file-upload">
-                <input type="file" id="file-input" name="fileInput" accept=".json">
-            </label>
-            <button type=submit onclick="handleFile()" id='submit-file'>Enviar</button>
+    <div class="left-content" style="flex-direction:column;">
+        <div class="page-content" id="upload-page">
+            <div class="upload-field">
+                <label class="custom-file-upload">
+                    <input type="file" id="file-input" name="fileInput" accept=".json">
+                </label>
+                <button type=submit onclick="handleFile()" id='submit-file'>Enviar</button>
+            
+            </div>
+            <button class="save-button" id="save-changes-button" onclick="salvarInformacoes()">Salvar alterações</button>
         </div>
-    </div>
-    <div class="download-content">
-        <button class="download-button" id="changes-download" onclick="downloadResultados()">Baixar alterações</button>
+        <div class="download-changes-field">
+            <button class="download-button" id="changes-download" onclick="downloadResultados()">Baixar alterações</button>
+        </div>
     </div>
     <div class="spacement-pages" id='input-spacement'></div>
    <div class="register-page" id="file-content">
